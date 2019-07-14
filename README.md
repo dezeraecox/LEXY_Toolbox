@@ -1,4 +1,4 @@
-# LEXY Toolkit
+# LEXY Toolbox
 
 ## Summary
 This small collection of processing scripts was created for image analysis and quantitation of repurposed versions of the light-inducible nuclear export system (LEXY) optogenetic toolkit (Niopek D, Wehler P, Roensch J, Eils R, Ventura B Di (2016) **Optogenetic control of nuclear protein export.** _Nat Commun_, [doi:10.1038/ncomms10624](https://www.nature.com/articles/ncomms10624))
