@@ -31,7 +31,7 @@ setup(
     # There are some restrictions on what makes a valid project name
     # specification here:
     # https://packaging.python.org/specifications/core-metadata/#name
-    name='Project_Name',  # Required
+    name='LEXY_toolkit',  # Required
 
     # Versions should comply with PEP 440:
     # https://www.python.org/dev/peps/pep-0440/
@@ -44,7 +44,7 @@ setup(
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
-    description='Brief Description',  # Required
+    description='Small collection of processing scripts image analysis and quantitation using Fiji/Jython + python.',  # Required
 
     # This is an optional longer description of your project that represents
     # the body of text which users will see when they visit PyPI.
@@ -72,7 +72,7 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url='https://github.com/dezeraecox/ProteomicsUtils',  # Optional
+    url='https://github.com/dezeraecox/LEXY_toolkit',  # Optional
 
     # This should be your name or the name of the organization which owns the
     # project.
@@ -90,7 +90,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 1 - Alpha Alpha',
 
         # Indicate who your project is intended for
         'Intended Audience :: Scientists',
@@ -127,7 +127,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['pandas', 'bokeh', 'matplotlib'],  # Optional
+    install_requires=['pandas', 'numpy', 'matplotlib', 'seaborn'],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
@@ -181,7 +181,7 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/dezeraecox/PROJECT_TITLE/issues',
-        'Source': 'https://github.com/dezeraecox/PROJECT_TITLE',
+        'Bug Reports': 'https://github.com/dezeraecox/LEXY_toolkit/issues',
+        'Source': 'https://github.com/dezeraecox/LEXY_toolkit',
     },
 )
