@@ -3,15 +3,12 @@
 ## Summary
 This small collection of processing scripts was created for image analysis and quantitation of repurposed versions of the light-inducible nuclear export system (LEXY) optogenetic toolkit (Niopek D, Wehler P, Roensch J, Eils R, Ventura B Di (2016) **Optogenetic control of nuclear protein export.** _Nat Commun_, [doi:10.1038/ncomms10624](https://www.nature.com/articles/ncomms10624))
 
-A summary of how to use these scripts in order is provided in the [workflow](workflow.md) file, including Jython functionality for inital processing of Leica LIF files in Fiji (ImageJ) and python scripts for quantitation. The provided test data includes a sample raw data file, and initial inputs for the python processing steps. Working copies of these scripts have also been provided as jupyter notebooks, which can be accessed via the [Binder](https://gke.mybinder.org/) badge above.
 
-### ImageJ/Jython functionality
+#### ImageJ/Jython functionality
 Briefly, the bounding region of interest (ROI) for all cells in a field of view is assigned on brightfield images using the [GDSC](http://www.sussex.ac.uk/gdsc/intranet/microscopy/UserSupport/AnalysisProtocol/imagej/toolsets) Cell Outliner plugin. Nuclei ROIs are assigned via automatic thresholding of the Hoechst image at each timepoint. Pixel-wise intensity information for both the cells and nuclei was then exported from all fluorescent channels for further analysis.
 
-### Python functionality
+#### Python functionality
 Transfected cells are selected via thresholding the mean fluorescence intensity per cell and the corresponding nuclei automatically assigned via a maximum Euclidean distance threshold. These nuclei were then tracked over time via similar distance thresholdis. The mean fluorescence intensity of each nuclei 'track' over time is then exported to a single excel file for later plotting and analysis in graphical plotting software.
-
-Additional functionality includes the filename_cleanup utility, before_after functions to compare the mean nuclear fluorescence before and after activation and the single_cell_plotter to visualise the mean nuclei fluorescence intensity over time for individual cells. Cells with aggregates were defined as those containing > 15% saturated pixels at time 0, and marked to allow removal from subsequent analysis.
 
 This work will be prepared for publication, and additional details included here when available.
 
